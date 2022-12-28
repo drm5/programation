@@ -50,6 +50,7 @@ input[value=Normal]{
 }
 
 .code{
+  position: relative;
   font-size: 20px;
   padding: 20px;
 }

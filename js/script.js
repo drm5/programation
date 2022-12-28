@@ -28,8 +28,8 @@ $(function(){
 
   //normal
   $('input[value=Normal]').click(function(){
-    $('html').css('background-color','rgb(200, 200, 205)').css('color','black')
-    $('body').css('background-color','rgb(200, 200, 205)').css('color','black')
+    $('html').css('background-color','white').css('color','black')
+    $('body').css('background-color','white').css('color','black')
     $('form').css('background-color','rgb(142, 142, 142)')
     $('textarea').css('background-color','white').css('color','black')
     $('input[type=submit]').css('background-color','rgb(30, 123, 177)').css('color','white').css('border','1.7px solid white')
