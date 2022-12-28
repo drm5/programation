@@ -1,5 +1,6 @@
 $(function(){
 
+  //enviar
   $('input[type=submit]').click(function(){
     var ta = $('textarea').val().split()
     var code = $('.code')
@@ -8,13 +9,19 @@ $(function(){
     return false
   })
 
+  //limpar
+  $('input[value=Limpar]').click(function(){
+    $('.code').html('')
+    $('textarea').val('')
+  })
+
   //matrix
   $('input[value=Matrix]').click(function(){
-    $('html').css('background-color','black').css('color','green')
-    $('body').css('background-color','black').css('color','green')
+    $('html').css('background-color','black').css('color','rgb(10, 203, 10)')
+    $('body').css('background-color','black').css('color','rgb(10, 203, 10)')
     $('form').css('background-color','rgb(40, 40, 44)')
-    $('textarea').css('background-color','black').css('color','green')
-    $('input').css('background-color','black').css('color','green').css('border','1.5px solid green')
+    $('textarea').css('background-color','black').css('color','rgb(10, 203, 10)')
+    $('input').css('background-color','black').css('color','rgb(10, 203, 10)').css('border','1.5px solid rgb(10, 203, 10)')
     $('input[value=Normal]').fadeIn()
     $('input[value=Matrix]').css('display','none')
   })
